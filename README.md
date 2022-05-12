@@ -1,6 +1,6 @@
 Wymagania biznesowe:
-- [ ] użytkownik jest reprezentowany w systemie jako ID; każde ID będzie unikalne
-- [ ] platforma wspiera następujące waluty: PLN, EUR, USD
+- [x] użytkownik jest reprezentowany w systemie jako ID; każde ID będzie unikalne
+- [x] platforma wspiera następujące waluty: PLN, EUR, USD
 - [ ] domyślnie każdy z użytkowników posiada rachunek we wszystkich dostępnych walutach
 - [ ] kurs wymiany walut będzie ustawiany w momencie startu aplikacji (np. wczytanie
   konfiguracji z pliku json/csv); platforma daje możliwość wymiany między wszystkimi
