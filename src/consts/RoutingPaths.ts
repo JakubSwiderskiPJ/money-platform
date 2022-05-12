@@ -1,4 +1,4 @@
 export enum RoutingPaths {
     HOME = "/",
-    USER = "/user:ID"
+    USER = "/user/:ID"
 }

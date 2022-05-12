@@ -1,7 +1,10 @@
-import { AccountsType} from "../../types/accountType";
+import { AccountsType } from "../../types/accountType";
 
-// TODO: Find a type for this
-export default function UserAccountsList({ accounts }: any/* rray<AccountsType> */) {
+type UserAccountsListProps = { accounts: Array<AccountsType> };
+
+export default function UserAccountsList(
+    { accounts }: UserAccountsListProps
+) {
     return (
         <article>
             <h3>Accounts</h3>
