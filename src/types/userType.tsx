@@ -1,8 +1,4 @@
-type AccountsType = {
-    name: string;
-    value: number;
-    symbol: string;
-};
+import { AccountsType } from "./accountType";
 
 export type UserType = {
     ID: string;
