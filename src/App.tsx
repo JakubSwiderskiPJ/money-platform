@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { v4 } from "uuid";
 import './App.css';
+import {Currencies} from "./consts/currencies";
+import UserPanel from "./components/UserPanel/UserPanel";
+import {CurrenciesSigns} from "./consts/currenciesSigns";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserPanel
+        user={{
+          ID: v4(),
+          accounts: [
+            {name: Currencies.PLN, value: 5,  symbol: CurrenciesSigns.PLN},
+            {name: Currencies.EUR, value: 100,  symbol: CurrenciesSigns.EUR},
+            {name: Currencies.USD, value: 200, symbol: CurrenciesSigns.USD}
+          ]
+        }}
+        />
     </div>
   );
 }
 
-export default App;
+

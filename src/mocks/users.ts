@@ -1,68 +1,54 @@
 import { v4 } from "uuid";
+import {Currencies} from "../consts/currencies";
+import {CurrenciesSigns} from "../consts/currenciesSigns";
 
-export const Users = [
+export const users = [
     {
         ID: v4(),
-        accounts: {
-            PLN: 5,
-            EUR: 100,
-            USD: 100,
-        },
+        accounts: [
+            { name: Currencies.PLN, value: 5, symbol: CurrenciesSigns.PLN },
+            { name: Currencies.EUR, value: 100, symbol: CurrenciesSigns.EUR },
+            { name: Currencies.USD, value: 100, symbol: CurrenciesSigns.USD },
+        ],
     },
     {
         ID: v4(),
-        accounts: {
-            PLN: 5,
-            EUR: 100,
-            USD: 100,
-        },
+        accounts: [
+            { name: Currencies.PLN, value: 5, symbol: CurrenciesSigns.PLN },
+            { name: Currencies.EUR, value: 100, symbol: CurrenciesSigns.EUR },
+            { name: Currencies.USD, value: 100, symbol: CurrenciesSigns.USD },
+        ],
     },
     {
         ID: v4(),
-        accounts: {
-            PLN: 5,
-            EUR: 100,
-            USD: 100,
-        },
+        accounts: [
+            { name: Currencies.PLN, value: 5, symbol: CurrenciesSigns.PLN },
+            { name: Currencies.EUR, value: 100, symbol: CurrenciesSigns.EUR },
+            { name: Currencies.USD, value: 100, symbol: CurrenciesSigns.USD },
+        ],
     },
     {
         ID: v4(),
-        accounts: {
-            PLN: 5,
-            EUR: 100,
-            USD: 100,
-        },
+        accounts: [
+            { name: Currencies.PLN, value: 5, symbol: CurrenciesSigns.PLN },
+            { name: Currencies.EUR, value: 100, symbol: CurrenciesSigns.EUR },
+            { name: Currencies.USD, value: 100, symbol: CurrenciesSigns.USD },
+        ],
     },
     {
         ID: v4(),
-        accounts: {
-            PLN: 5,
-            EUR: 100,
-            USD: 100,
-        },
+        accounts: [
+            { name: Currencies.PLN, value: 5, symbol: CurrenciesSigns.PLN },
+            { name: Currencies.EUR, value: 100, symbol: CurrenciesSigns.EUR },
+            { name: Currencies.USD, value: 100, symbol: CurrenciesSigns.USD },
+        ],
     },
     {
         ID: v4(),
-        accounts: {
-            PLN: 5,
-            EUR: 100,
-            USD: 100,
-        },
+        accounts: [
+            { name: Currencies.PLN, value: 5, symbol: CurrenciesSigns.PLN },
+            { name: Currencies.EUR, value: 100, symbol: CurrenciesSigns.EUR },
+            { name: Currencies.USD, value: 100, symbol: CurrenciesSigns.USD },
+        ],
     },
-    {
-        ID: v4(),
-        accounts: {
-            PLN: 5,
-            EUR: 100,
-            USD: 100,
-        },
-    },
-    {
-        ID: v4(),
-        accounts: {
-            PLN: 5,
-            EUR: 100,
-            USD: 100,
-        },
-    },
-];
+    ];
