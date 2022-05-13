@@ -6,8 +6,8 @@ Wymagania biznesowe:
   konfiguracji z pliku json/csv); platforma daje możliwość wymiany między wszystkimi
   dostępnymi walutami
 - [ ] dla każdego z rachunków możliwe są następujące operacje:
-- [ ] wpłata
-- [ ] wypłata
+- [x] wpłata
+- [x] wypłata
 - [ ] transfer środków do innego użytkownika platformy
 - [ ] wymiana środków na inną walutę
 - [ ] platforma umożliwia pobranie historii dla danego rodzaju operacji, konkretnej waluty,

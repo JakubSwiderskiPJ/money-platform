@@ -1,24 +1,29 @@
-import React from "react";
+import { useParams } from "react-router-dom";
+
+import { UsersStateContext } from "../../contexts/UserStateContext/UserStateContext";
 
 import UserAccountsList from "../UserAccountsList/UserAccountsList";
 
-import { UserType } from "../../types/userType";
+import useUserFilter from "../../hooks/useUserFilter";
+import React from "react";
 
+export default function UserPanel() {
+    let params = useParams();
 
-type UserPanelProps = { user: UserType };
+    const { state } = React.useContext(UsersStateContext);
 
-export default function UserPanel({ user }: UserPanelProps) {
-    /* const [loggedUser, setLoggedUser] = React.useState();
-    React.useEffect(() => {}) */
-
-    React.useEffect(() => {
-        console.log(user)
-    }, [user])
+    const loggedUser = useUserFilter(params.ID!, state!);
 
     return (
         <section>
-            <h2>Hello {user.ID}</h2>
-           <UserAccountsList accounts={user.accounts}/>
+            {loggedUser ? (
+                <>
+                    <h2>Hello {loggedUser.ID}</h2>
+                    <UserAccountsList ID={loggedUser.ID} accounts={loggedUser.accounts} />
+                </>
+            ) : (
+                <p>Something went wrong. No user found!</p>
+            )}
         </section>
     );
 }
